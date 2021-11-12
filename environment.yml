@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.0
+  - r-tidyverse
+  - r-readr
+  - r-dplyr
+  - r-dt
+  

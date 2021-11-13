@@ -1,10 +1,20 @@
 channels:
   - conda-forge
 dependencies:
-  - r-base=4.0
+  - r-base=3.6
+  - r-utils
+  - r-grDevices
+  - r-graphics
+  - r-stats
+  - r-methods
+  - r-datasets
+  - r-rstudioapi
   - r-tidyverse
   - r-vroom
   - r-readr
   - r-dplyr
   - r-dt
   
+  
+
+     

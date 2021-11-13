@@ -2,6 +2,10 @@ library(readr)  #Membaca data
 library(dplyr)  #Data processing
 library(DT)     #Menampilkan tabel agar mudah dilihat di browser
 
+library("rstudioapi") # Load rstudioapi package
+setwd(dirname(getActiveDocumentContext()$path))       # Set working directory to source file location
+getwd()
+
 asean_data <- read_csv("datasets/asean_demografi.csv")
 asean_data <- asean_data[c(3,5,7,8,9), ] #Memilih 5 negara : Indonesia, Malaysia, Filipina, Singapura, dan Thailand.
 datatable(asean_data, caption = "Indikator Demografi Negara ASEAN 2015")
